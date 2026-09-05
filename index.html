@@ -605,7 +605,7 @@
       if (charIndex < currentLine.length) {
         typewriterEl.textContent += currentLine.charAt(charIndex);
         charIndex++;
-        setTimeout(typeNextChar, 45 + Math.random() * 30); // typewriter speed
+        setTimeout(typeNextChar, 45 + Math.random() * 10); // typewriter speed
       } else {
         // Finished a line → short pause, clear, next line
         setTimeout(() => {
@@ -613,7 +613,7 @@
           charIndex = 0;
           lineIndex++;
           setTimeout(typeNextChar, 180);
-        }, 500);
+        }, 2000);
       }
     }
 
